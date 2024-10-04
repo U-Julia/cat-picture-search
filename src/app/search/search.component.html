@@ -1,0 +1,21 @@
+<div class="search-block" *ngIf="pic$ | async">
+
+  <label> Search breeds </label>
+  <input type="text" class="form-control" [formControl]="searchBreeds" pInputText placeholder="Search breeds"/>
+
+  <div class="breeds-list">
+    <mat-selection-list [formControl]="selectionBreeds">
+      <mat-list-option *ngFor="let breed of filteredBreeds" [value]="breed.id">
+        {{breed.name}}
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+
+  <mat-form-field appearance="fill" class="selected-number">
+    <mat-label>Limit</mat-label>
+    <select matNativeControl (change)="selectLimit($event)">
+      <option *ngFor="let option of limit" [value]="option.value"
+              [selected]="selectedLimit === option.value">{{ option.viewValue }}</option>
+    </select>
+  </mat-form-field>
+</div>

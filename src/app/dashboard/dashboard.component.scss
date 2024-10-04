@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.pictures-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.picture {
+  width: 230px;
+  height: 230px;
+  margin: 5px;
+  object-fit: contain;
+}

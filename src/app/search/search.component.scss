@@ -1,0 +1,24 @@
+.search-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-control {
+  width: 250px;
+  height: 30px;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+}
+
+.breeds-list {
+  height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+
+.selected-number {
+  margin-top: 25px;
+}
